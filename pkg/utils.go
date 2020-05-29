@@ -15,7 +15,7 @@ type Background struct {
 	common.SpaceComponent
 }
 
-// NewBackground creates a background of colored tiles - might not be the most efficient way to do this
+// NewBackground creates a background of coloured tiles - might not be the most efficient way to do this.
 // It gets added to the world as well, so we won't return anything.
 func NewBackground(world *ecs.World, width, height int, colorA, colorB color.Color) *Background {
 	rect := image.Rect(0, 0, width, height)
